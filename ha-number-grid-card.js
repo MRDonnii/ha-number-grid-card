@@ -1,4 +1,4 @@
-const VERSION = "0.3.0";
+const VERSION = "0.3.1";
 
 class HANumberGridCard extends HTMLElement {
   constructor() {
@@ -85,7 +85,7 @@ class HANumberGridCard extends HTMLElement {
     const cols = Number(this._config.columns) || 1;
 
     this.shadowRoot.innerHTML = `<style>
-      :host{display:block;--good:var(--dashboard-success,#54d9aa);--edge:var(--dashboard-border-neutral,rgba(127,145,165,.2))}
+      :host{display:block;--good:var(--dashboard-success, var(--success-color, #54d9aa));--edge:var(--dashboard-border-neutral, var(--divider-color, rgba(127,145,165,.2)))}
       *{box-sizing:border-box}
       ha-card{padding:16px 18px;border-radius:20px;background:var(--ha-card-background,var(--card-background-color));color:var(--primary-text-color);box-shadow:var(--ha-card-box-shadow)}
       .head{margin-bottom:6px}
