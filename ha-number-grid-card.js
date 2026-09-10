@@ -1,4 +1,4 @@
-const VERSION = "0.3.1";
+const VERSION = "0.4.0";
 
 class HANumberGridCard extends HTMLElement {
   constructor() {
@@ -97,7 +97,7 @@ class HANumberGridCard extends HTMLElement {
       .row-name{font-size:12px;font-weight:650;display:flex;flex-direction:column;min-width:0}
       .row-name small{font-size:9px;font-weight:700;color:var(--secondary-text-color);margin-top:1px}
       .stepper{display:flex;align-items:center;gap:6px;flex:0 0 auto}
-      .step-btn{width:24px;height:24px;border-radius:999px;border:1px solid var(--edge);background:transparent;color:var(--primary-text-color);display:grid;place-items:center;cursor:pointer;flex:0 0 auto}
+      .step-btn{width:24px;height:24px;border-radius:999px;border:1px solid color-mix(in srgb,var(--good) 16%,var(--edge));background:transparent;color:var(--primary-text-color);display:grid;place-items:center;cursor:pointer;flex:0 0 auto}
       .step-btn:hover{border-color:var(--good);color:var(--good)}
       .step-btn ha-icon{--mdc-icon-size:14px}
       .row-value{font-size:13px;font-weight:800;min-width:34px;text-align:center}
